@@ -1,0 +1,15 @@
+sudo apt update
+sudo apt upgrade -y
+sudo apt autoremove -y
+sudo apt update
+sudo apt install net-tools iproute2 dnsutils 
+ip addr
+ip route
+ping 8.8.8.8
+sudo apt install openssh-server -y
+sudo systemctl enable ssh
+sudo systemctl start ssh
+sudo systemctl status ssh
+sudo hostnamectl set-hostname server-debian
+sudo reboot
+sudo shutdown -h now
